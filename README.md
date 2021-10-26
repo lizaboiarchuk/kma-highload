@@ -30,7 +30,7 @@ aws ec2 create-internet-gateway --query InternetGateway.InternetGatewayId --outp
 ```
 aws ec2 describe-internet-gateways | grep "InternetGatewayId"
 ```
-- Assign gateway id to $IG_ID
+- Assign $IG_ID to output of previous command 
 ```
 aws ec2 attach-internet-gateway --internet-gateway-id $IG_ID --vpc-id $VPC_ID
 ```
