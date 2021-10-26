@@ -23,6 +23,8 @@ aws ec2 create-subnet --vpc-id $VPC_ID --availability-zone us-east-1b --cidr-blo
 aws ec2 create-subnet --vpc-id $VPC_ID --availability-zone us-east-1c --cidr-block 10.10.3.0/24
 ```
 
+- Assigning variables $S1_ID, $S2_ID, $S3_ID to Subnets Ids (from previous commands outputs)
+
 ### Gateway 
 ```
 aws ec2 create-internet-gateway --query InternetGateway.InternetGatewayId --output text
